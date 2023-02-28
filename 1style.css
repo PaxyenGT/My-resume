@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.form_reg_text {
+    margin-top: 20px;
+    text-align: center;
+}
+.form_reg {
+    box-sizing: border-box;
+    background: #d7d0ff;
+    border: 1px solid #a6a1c5;
+    border-radius: 15px;
+    width: 400px;
+    height: 650px;
+    margin: 80px auto;
+}
+.group_form_list {
+    padding-top: 30px;
+}
+.group_form_input {
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    height: 30px;
+    border: 1px solid #0f8fee;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+.group_form_input::placeholder {
+    font-style: italic;
+}
+.group_form_item {
+    padding: 9px 25px 10px;
+}
+.group_text {
+    padding-bottom: 10px;
+    display: inline-block;
+    
+}
+.group_form_input:focus {
+    outline: 2px solid #0f8dee;
+    outline-offset: -2px;
+    border-radius: 7px;
+}
+.group_radio::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #0f8dee;
+    border-radius: 50%;
+}
+.radio:checked + .group_radio::before {
+    background-color: #0f8dee;
+    outline: 2px solid #d8d1ff;
+    outline-offset: -4px;
+}
+.radio {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+}
+.group_radio_item {
+    padding-right: 10px;
+}
+.but_group {
+    text-align: center;
+}
+.but_reg {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 150px;
+    height: 35px;
+    background-color: #0f8dee;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #1467a5;
+    transition: 1000ms;
+}
+.but_reg:hover {
+    background-color: #1467a5;
+    transition: 700ms;
+}
